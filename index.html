@@ -8,25 +8,43 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             line-height: 1.6;
             color: #333;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically (optional) */
+            min-height: 100vh; /* Full viewport height for centering */
+            background-color: #f5f5f5;
         }
+        
+        .container {
+            max-width: 800px; /* Set max width for content */
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
         h1, h2 {
             color: #2c3e50;
             margin-bottom: 10px;
         }
+
         h3 {
             margin-top: 15px;
             color: #34495e;
         }
+
         p, ul {
             margin: 5px 0;
         }
+
         ul {
             list-style-type: square;
             padding-left: 20px;
         }
+
         .contact-info, .education, .work-experience, .projects, .skills {
             margin-bottom: 30px;
         }
@@ -34,90 +52,92 @@
 </head>
 <body>
 
-    <h1>Runhua(Henry) Zhang</h1>
-    <div class="contact-info">
-        <p>343-366-9669 | <a href="mailto:rh2zhang@uwaterloo.ca">rh2zhang@uwaterloo.ca</a> | Waterloo, ON | <a href="https://github.com/hzhang092">github.com/hzhang092</a></p>
-    </div>
+    <div class="container">
+        <h1>Runhua(Henry) Zhang</h1>
+        <div class="contact-info">
+            <p>343-366-9669 | <a href="mailto:rh2zhang@uwaterloo.ca">rh2zhang@uwaterloo.ca</a> | Waterloo, ON | <a href="https://github.com/hzhang092">github.com/hzhang092</a></p>
+        </div>
 
-    <div class="education">
-        <h2>EDUCATION</h2>
-        <p><strong>Mathematics Honors Coop: Statistics & Computational Mathematics double major</strong></p>
-        <p>University of Waterloo - Waterloo, ON</p>
-        <p>Expected in 05/2025</p>
-        <p>Average GPA: 3.92 (final two years)</p>
-        <p>Recipient of Faculty of Mathematics Entrance Scholarship, 08/2020</p>
-    </div>
+        <div class="education">
+            <h2>EDUCATION</h2>
+            <p><strong>Mathematics Honors Coop: Statistics & Computational Mathematics double major</strong></p>
+            <p>University of Waterloo - Waterloo, ON</p>
+            <p>Expected in 05/2025</p>
+            <p>Average GPA: 3.92 (final two years)</p>
+            <p>Recipient of Faculty of Mathematics Entrance Scholarship, 08/2020</p>
+        </div>
 
-    <div class="work-experience">
-        <h2>WORK EXPERIENCE</h2>
+        <div class="work-experience">
+            <h2>WORK EXPERIENCE</h2>
 
-        <h3>Data Management Analyst | 09/2024 - Present</h3>
-        <p>Environment and Climate Change Canada (ECCC), Gatineau, QC</p>
-        <ul>
-            <li>Contributed to the Government of Canada’s machine-actionable Data Management Plan (maDMP) initiative, aligning with FAIRER standards.</li>
-            <li>Developed Python scripts to convert Excel-based DMPs to JSON schema format using pandas and numpy.</li>
-            <li>Designed UI schemas to optimize JSON schema display in web UI.</li>
-            <li>Enhanced the logical structure of DMPs for improved consistency and clarity.</li>
-            <li>Utilized government APIs to retrieve country code data and convert it into JSON format.</li>
-        </ul>
+            <h3>Data Management Analyst | 09/2024 - Present</h3>
+            <p>Environment and Climate Change Canada (ECCC), Gatineau, QC</p>
+            <ul>
+                <li>Contributed to the Government of Canada’s machine-actionable Data Management Plan (maDMP) initiative, aligning with FAIRER standards.</li>
+                <li>Developed Python scripts to convert Excel-based DMPs to JSON schema format using pandas and numpy.</li>
+                <li>Designed UI schemas to optimize JSON schema display in web UI.</li>
+                <li>Enhanced the logical structure of DMPs for improved consistency and clarity.</li>
+                <li>Utilized government APIs to retrieve country code data and convert it into JSON format.</li>
+            </ul>
 
-        <h3>Research Assistant | 05/2024 - 08/2024</h3>
-        <p>Lilia Krivodonova Lab, Waterloo, ON</p>
-        <ul>
-            <li>Designed, trained, and evaluated Fully Convolutional Networks (FCNs) for image reconstruction, achieving a 20x speed increase over iterative methods.</li>
-            <li>Developed an overlapping padding strategy for seamless large-scale projection prediction.</li>
-            <li>Recognized as a top-two presenter at the end-of-term mini-conference.</li>
-        </ul>
+            <h3>Research Assistant | 05/2024 - 08/2024</h3>
+            <p>Lilia Krivodonova Lab, Waterloo, ON</p>
+            <ul>
+                <li>Designed, trained, and evaluated Fully Convolutional Networks (FCNs) for image reconstruction, achieving a 20x speed increase over iterative methods.</li>
+                <li>Developed an overlapping padding strategy for seamless large-scale projection prediction.</li>
+                <li>Recognized as a top-two presenter at the end-of-term mini-conference.</li>
+            </ul>
 
-        <h3>Research Assistant | 09/2023 - 12/2023</h3>
-        <p>Defence Research and Development Canada, Toronto, ON</p>
-        <ul>
-            <li>Implemented a machine learning feature in a clinical data simulation toolbox using PyTorch.</li>
-            <li>Validated synthetic data using the KS test, TV test, and correlation analysis.</li>
-            <li>Developed an R-Python data pipeline for data visualization and validation.</li>
-        </ul>
+            <h3>Research Assistant | 09/2023 - 12/2023</h3>
+            <p>Defence Research and Development Canada, Toronto, ON</p>
+            <ul>
+                <li>Implemented a machine learning feature in a clinical data simulation toolbox using PyTorch.</li>
+                <li>Validated synthetic data using the KS test, TV test, and correlation analysis.</li>
+                <li>Developed an R-Python data pipeline for data visualization and validation.</li>
+            </ul>
 
-        <h3>Research Assistant | 01/2023 - 04/2023</h3>
-        <p>Brian Ingalls Lab, Waterloo, ON</p>
-        <ul>
-            <li>Developed a stochastic agent-based model for analyzing monocultural colonies.</li>
-            <li>Conducted exploratory data analysis and presented findings to the team.</li>
-        </ul>
+            <h3>Research Assistant | 01/2023 - 04/2023</h3>
+            <p>Brian Ingalls Lab, Waterloo, ON</p>
+            <ul>
+                <li>Developed a stochastic agent-based model for analyzing monocultural colonies.</li>
+                <li>Conducted exploratory data analysis and presented findings to the team.</li>
+            </ul>
 
-        <h3>Website Developer | 06/2022 - 08/2022</h3>
-        <p>Toronto Central Baptist Church</p>
-        <ul>
-            <li>Developed and maintained three websites using WordPress, enhancing SEO performance and site traffic.</li>
-            <li>Converted design mock-ups into functional pages using HTML and CSS.</li>
-        </ul>
+            <h3>Website Developer | 06/2022 - 08/2022</h3>
+            <p>Toronto Central Baptist Church</p>
+            <ul>
+                <li>Developed and maintained three websites using WordPress, enhancing SEO performance and site traffic.</li>
+                <li>Converted design mock-ups into functional pages using HTML and CSS.</li>
+            </ul>
 
-        <h3>Modern Web Application Design | 12/2020 - 09/2021</h3>
-        <p>Manulife (Remote)</p>
-        <ul>
-            <li>Developed a website for LLENA(AI) using HTML5 and CSS; enhanced visual appeal through data-driven improvements.</li>
-            <li>Demonstrated adaptability and problem-solving skills in a fast-paced environment.</li>
-        </ul>
-    </div>
+            <h3>Modern Web Application Design | 12/2020 - 09/2021</h3>
+            <p>Manulife (Remote)</p>
+            <ul>
+                <li>Developed a website for LLENA(AI) using HTML5 and CSS; enhanced visual appeal through data-driven improvements.</li>
+                <li>Demonstrated adaptability and problem-solving skills in a fast-paced environment.</li>
+            </ul>
+        </div>
 
-    <div class="projects">
-        <h2>PROJECTS</h2>
+        <div class="projects">
+            <h2>PROJECTS</h2>
 
-        <h3>2024 ASA (American Statistical Association) DataFest | 04/2024</h3>
-        <p>University of Waterloo</p>
-        <ul>
-            <li>Awarded Best Visualization at the 2024 ASA DataFest.</li>
-            <li>Conducted statistical analysis to identify trends in learning outcomes based on textbook difficulty.</li>
-            <li>Presented actionable recommendations to optimize learning materials.</li>
-        </ul>
-    </div>
+            <h3>2024 ASA (American Statistical Association) DataFest | 04/2024</h3>
+            <p>University of Waterloo</p>
+            <ul>
+                <li>Awarded Best Visualization at the 2024 ASA DataFest.</li>
+                <li>Conducted statistical analysis to identify trends in learning outcomes based on textbook difficulty.</li>
+                <li>Presented actionable recommendations to optimize learning materials.</li>
+            </ul>
+        </div>
 
-    <div class="skills">
-        <h2>SKILLS</h2>
-        <p><strong>Technical:</strong> Python (scikit-learn, matplotlib), R, MATLAB, Pyspark, SQL (PostgreSQL), Linux, Bash</p>
-        <p><strong>Machine Learning:</strong> PyTorch, NumPy, pandas</p>
-        <p>Experience with Git for version control and collaborative coding</p>
-        <p>Strong statistical knowledge including hypothesis testing, linear models, and sampling techniques</p>
-        <p>Excellent problem-solving and critical thinking abilities</p>
+        <div class="skills">
+            <h2>SKILLS</h2>
+            <p><strong>Technical:</strong> Python (scikit-learn, matplotlib), R, MATLAB, Pyspark, SQL (PostgreSQL), Linux, Bash</p>
+            <p><strong>Machine Learning:</strong> PyTorch, NumPy, pandas</p>
+            <p>Experience with Git for version control and collaborative coding</p>
+            <p>Strong statistical knowledge including hypothesis testing, linear models, and sampling techniques</p>
+            <p>Excellent problem-solving and critical thinking abilities</p>
+        </div>
     </div>
 
 </body>
